@@ -61,7 +61,7 @@ class ChoroplethMapExample {
         this.province_data = data;
       }),
       $.getJSON('places-20180727.geojson', (data) => {
-        let monasteries = data.features.map((f)=>{
+        this.monasteries = data.features.map((f)=>{
           let properties = f.properties;
           let province = ((province) => {
             if (province.toLowerCase() === 'syracuse') {
@@ -76,12 +76,17 @@ class ChoroplethMapExample {
           };
         }
         );
-        if (monasteries.length > 0) {
-          this.orders_data = this.calculateLQs(monasteries, true);
+        if (this.monasteries.length > 0) {
+          this.orders_data = this.calculateLQs(this.monasteries, $('#include_uncertains').prop('checked'));
         }
       })
     ).then(() => {
       this.initOrdersSelect(this.orders_data);
+      let include_uncertains = $('#include_uncertains');
+      include_uncertains.change(() => {
+        this.orders_data = this.calculateLQs(this.monasteries, $('#include_uncertains').prop('checked'));
+        this.refreshMap();
+      });
     });
 
     this.map.attributionControl.addAttribution('Monastic order data &copy; <a href="http://www.thehayesweb.org/dhayes/">Dawn Marie Hayes</a>');

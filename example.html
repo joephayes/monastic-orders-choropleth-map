@@ -21,8 +21,13 @@
   <body>
 
     <select id='orders_select'></select>
-    <input type="checkbox" id="include_uncertains"></input>
-    <label for="include_uncertains">Include Uncertain Data?</label>
+    <input type='checkbox' id='include_uncertains'></input>
+    <label for='include_uncertains' class='tip-below'
+      data-tip='By checking this box, monasteries with provinces and orders
+      information which is not completely certain will be merged with
+      monasteries with certain province and order information'>
+      Include Uncertain Data?
+    </label>
     <div id='map'></div>
 
     <script type="text/javascript" src="app.js"></script>

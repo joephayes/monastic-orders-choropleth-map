@@ -1,7 +1,7 @@
 # Norman Sicily Monastic Order Location Quotients Choropleth Map
 
-This is an example Choropleth map showing the location quotients for Norman
-Sicilian monastic orders.
+This is an example [Choropleth map](https://en.wikipedia.org/wiki/Choropleth_map)
+showing the location quotients for Norman Sicilian monastic orders.
 
 ## Location Quotients
 
@@ -30,30 +30,33 @@ provinces are used, while the reference area is the whole of Sicily.
 
 ## Data
 
-The data for monastic foundations by order are drawn from Lynn White's *Latin
-Monasticism in Norman Sicily*<sup>[3](#footnote3)</sup>. In it, White gives a list of monasteries founded
-in the Norman period of Sicilian history (1060-1194 CE).
-[Dawn Marie Hayes](http://www.thehayesweb.org/dhayes/) has assigned each of
-these foundations a location in one of the modern provinces of Sicily.
+The data comes from the [The Norman Sicily Project's](http://www.normansicily.org/)
+[data dump GitHub repo](https://github.com/the-norman-sicily-project/data-dumps).
 
-Where the order of the foundation was in doubt...
-
-Where the location of the foundation was in doubt...
+The Norman Sicily Project mined most of the data about Norman Sicilian monastic
+foundations from Lynn White's *Latin Monasticism in Norman Sicily*<sup>[3](#footnote3)</sup>.
+In it, White gives a list of monasteries founded in the Norman period of
+Sicilian history (1060-1194 CE). [Dawn Marie Hayes](http://www.thehayesweb.org/dhayes/)
+has assigned each of these foundations a location in one of the modern
+provinces of Sicily.
 
 ## Files
 
-* example.html - modified version of Leaflet's example of an
-[interactive choropleth map](http://leafletjs.com/examples/choropleth/example.html)
+* index.html - modified version of Leaflet's example of an
+  [interactive choropleth map](http://leafletjs.com/examples/choropleth/example.html)
 * it_sicilia_provinces.geojson - geojson file containing modern provinces for
-Sicily. From https://github.com/Dataninja/geo-shapes.git (italy region 19).
-* orders_data.json - JSON file with the location quotient by monastic order by
-province
+  Sicily. From https://github.com/Dataninja/geo-shapes.git (italy region 19).
+* places-20180727.geojson - GeoJSON file containing raw data about Norman Sicilian
+  monastic foundations. Copied from
+  [The Norman Sicily Project data dumps](https://github.com/the-norman-sicily-project/data-dumps/blob/master/2018-07-27/)
+* app.js - main application script
+* app.css - styles for application
 * config.js.sample - edit this file to add your MapBox access token. Save and
-rename it to config.js. **IMPORTANT! DO NOT COMMIT THIS FILE!**
+  rename it to config.js. **IMPORTANT! DO NOT COMMIT THIS FILE!**
 
 ## License
 
-Copyright © 2017 Joseph P. Hayes
+Copyright © 2017-2018 Joseph P. Hayes
 
 Released under the MIT license.
 

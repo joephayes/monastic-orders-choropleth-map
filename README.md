@@ -5,28 +5,34 @@ showing the location quotients for Norman Sicilian monastic orders.
 
 ## Location Quotients
 
+In economics, a location quotient is used to determine areas where
+employment in a specific industry may be over or under represented. In this
+example, the location quotient concept is applied to the number of monastic
+foundations by order in Norman Sicily. Hopefully, location quotients will
+identify concentrations of orders in certain provinces of Sicily. In the model,
+the monastic order replaces the concept of industry. For regions, the
+boundaries of the modern provinces are used for convenience, while the
+reference area is the whole of Sicily.
+
 According to the Bureau of Economic Analysis, "A location quotient (LQ) is an
 analytical statistic that measures a region’s industrial specialization
 relative to a larger geographic unit (usually the nation)".<sup>[1](#footnote1)</sup>
 
 Location quotients are calculated by a three step method:
-1. Divide the local industry employment by the all industry total of local
-employment.
-1. Divide reference area industry employment by the all industry total of
-reference area employment.
-1. Divide the local ratio by the reference area employment.
+
+1. Divide the local employment for a specific industry by the sum of employment in all industries for the local area.
+1. Divide reference area industry employment by the sum of all employment in all industries for the 
+reference area.
+1. Divide the local ratio by the reference area ratio.
 
 Normally, "local" denotes a state or region while "reference area" denotes a
 nation.
 
 A location quotient of greater than 1.0 indicates the industry has a greater
 share of local employment than does the reference area.<sup>[2](#footnote2)</sup>
-
-In this example, I am applying the location quotient concept to the number of
-monastic foundations by order in Norman Sicily. I hope to identify
-concentrations of orders in certain provinces of Sicily. In my model, the
-monastic order replaces the concept of industry. For regions, the modern
-provinces are used, while the reference area is the whole of Sicily.
+In this model, a location quotient of greater than 1.0 indicates that a
+particular monastic order has a greater concentration of foundations in a
+specific modern province of Sicily.
 
 ## Data
 
